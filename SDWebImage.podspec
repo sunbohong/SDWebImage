@@ -5,7 +5,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.license = 'MIT'
   s.summary = 'Asynchronous image downloader with cache support with an UIImageView category.'
-  s.homepage = 'https://github.com/rs/SDWebImage'
   s.author = { 'Olivier Poitrey' => 'rs@dailymotion.com' }
   s.source = { :git => 'https://github.com/sunbohong/SDWebImage.git', :tag => s.version.to_s }
 
@@ -20,7 +19,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.framework = 'ImageIO'
   
-  s.default_subspec = 'Core'
+  s.default_subspec = 'WebP'
 
   s.subspec 'Core' do |core|
     core.source_files = 'SDWebImage/{NS,SD,UI}*.{h,m}'
